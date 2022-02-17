@@ -1,23 +1,15 @@
-$llvm_version = "13.0.0"
-
-# Check if scoop is installed
-if (!(Get-Command "scoop" -errorAction SilentlyContinue)) {
-    Write-Error "scoop is not installed, get it at: https://https://scoop.sh/"
-}
+$llvm_version = "13.0.1"
 
 if (!(Get-Command "git" -errorAction SilentlyContinue)) {
-    Write-Output "git is not installed, installing with scoop"
-    scoop install git
+    Write-Output "git is not installed"
 }
 
 if (!(Get-Command "cmake" -errorAction SilentlyContinue)) {
-    Write-Output "cmake is not installed, installing with scoop"
-    scoop install cmake
+    Write-Output "cmake is not installed"
 }
 
 if (!(Get-Command "7z" -errorAction SilentlyContinue)) {
-    Write-Output "7z is not installed, installing with scoop"
-    scoop install 7z
+    Write-Output "7z is not installed"
 }
 
 
